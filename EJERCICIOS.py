@@ -1,3 +1,15 @@
+def largo(num):
+    if num == 0:
+        return 1
+    else:
+        r = 0
+        while(r>0):
+            r+=1
+    num//=10
+    return r
+
+
+
 def cantidadDigitos (num):
  
     contador = 0
