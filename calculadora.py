@@ -13,13 +13,10 @@ def multiplicacion():
     a= int(input("DIGITE UN VALOR PARA a:\t"))
     
     b= int(input("DIGITE EL VALOR DE b:\t"))
-    cantidadSuma = 0
-    while (b>0):
-        cantidadSuma+=1
-        cantidadSuma + a
-    return cantidadSuma
-        
-        
+    resultado = 0 
+    for numero in range(b):
+        resultado += b
+    print(resultado)
         
 def division():
     a= int(input("DIGITE UN VALOR PARA EL DIVIDENDO:\t"))
