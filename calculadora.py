@@ -19,18 +19,17 @@ def multiplicacion():
     print(resultado)
         
 def division():
-    a= int(input("DIGITE UN VALOR PARA EL DIVIDENDO:\t"))
+    dividendo= int(input("DIGITE UN VALOR PARA EL DIVIDENDO:\t"))
     
-    b= int(input("DIGITE EL VALOR EL DIVISOR:\t"))
-    if b != 0:
-        contador = 0
-        for numero in range(a):
-            a >= b
-            a= a-b
-            contador = contador +1
+    divisor= int(input("DIGITE EL VALOR EL DIVISOR:\t"))
+    contador = 0
+    if b == 0:
+        return "Numero no se puede dividir por CERO"
+    for numero in range(a):
+        a >= b
+        a= a-b
+        contador = contador +1
         print contador
-    else:
-         print("Numero no se puede dividir por CERO")
         
 def potencia():
     a= int(input("DIGITE UN VALOR PARA a:\t"))
