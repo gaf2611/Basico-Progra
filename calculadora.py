@@ -23,7 +23,12 @@ def division():
     
     b= int(input("DIGITE EL VALOR EL DIVISOR:\t"))
     if b != 0:
-        print (a/b)
+        contador = 0
+        for numero in range(a):
+            a >= b
+            a= a-b
+            contador = contador +1
+        print contador
     else:
          print("Numero no se puede dividir por CERO")
         
