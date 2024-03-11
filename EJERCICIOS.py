@@ -149,6 +149,6 @@ def buscarTexto():
         return "Error: Texto no encontrado"
 def buscarTexto_Aux(texto):
     resultado = 0
-    for x in texto:
+    for letra in texto:
         resultado +=1
     return resultado
