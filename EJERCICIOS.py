@@ -139,4 +139,16 @@ def largoTexto_Aux(texto):
         resultado += texto
         
     return resultado
-        
+
+def buscarTexto():
+    texto = input("Ingrese el Texto")
+    textoBuscar = input("Ingrese el Texto a buscar")
+    if textoBuscar in texto:
+        return textoBuscar
+    else:
+        return "Error: Texto no encontrado"
+def buscarTexto_Aux(texto):
+    resultado = 0
+    for x in texto:
+        resultado +=1
+    return resultado
