@@ -136,7 +136,7 @@ def largoTexto(texto):
 def largoTexto_Aux(texto):
     resultado = 0 
     for caracter in texto:
-        resultado += texto
+        resultado += 1
         
     return resultado
 
