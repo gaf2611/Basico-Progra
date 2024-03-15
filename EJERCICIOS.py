@@ -152,3 +152,129 @@ def buscarTexto_Aux(texto):
     for letra in texto:
         resultado +=1
     return resultado
+
+
+"""
+Nombre: esPrimo
+Entradas: numero
+Salidas: Retorna True o False en el caso de que un numero es primo
+Restricciones: El parámetro debe ser mayor a cero y entero.
+"""
+
+def esPrimo(num):
+    if not isinstance(num,int):
+        return "Error Nùmero debe ser ENTERO"
+    if not(num>0):
+        return "Error: Nùmero debe ser mayor a CERO"
+    divisible = 0
+    for i in range(1,num+1):
+        if (num%i)== 0:
+            divisible+=1
+    if divisible == 2:
+        return True
+    else:
+        return False
+def esPrimoV2(num):
+    if not isinstance(num,int):
+        return "Error: Número debe ser ENTERO"
+    if not(num>0):
+        return "Error: Número debe ser mayor a CERO"
+    divisible = 0
+    contador = 1
+    while(contador <= num):
+        if (num%contador)== 0:
+            divisible+=1
+        contador+= 1
+    if divisible == 2:
+        return True
+    else:
+        return False
+            
+"""
+Nombre: numeroAscendente
+Entrada: numero
+Salida: Retorna True o False en el caso de los digitos del numero esté ordenado
+        ascendente de derecha a izquierda
+Restricciones: El parámetro debe ser mayor a cero y entero
+"""
+def contarD(num):
+    if not isinstance(num,int):
+        return"Numero debe ser entero"
+    if not(num>0):
+        return "Numero debe ser mayor a cero."
+    contador = 0
+    while (num>0):
+        num//=10
+    contador +=1
+
+def numeroAscendente(num):
+    if not isinstance(num,int):
+        return "Error: Número debe ser entero."
+    if not (num>0):
+        return "Error: Número debe ser mayor a cero."
+    contador = 0
+    while (num>0):
+        digito = num%10
+        if(digito<contador):
+            return False
+        num//=10
+    return True
+        
+            
+    
+"""
+Nombre: invertirNumero
+Entrada: Un numero
+Salida: El número debe retornar invertido
+Restricción: Numero debe ser entero.
+"""
+def invertirNumero(num):
+    if not isinstance(num,int):
+        return "ERROR: Número debe ser ENTERO."
+    resultado = 0
+    signo = num
+    while num != 0:
+        digito = num%10
+        resultado = 10*resultado+digito
+        num//=10
+    if (signo < 0):
+        return resultado * -1
+    else:
+        return resultado
+"""
+Nombre: divisores
+Entrada: Número
+Salida: Imprimir los divisores de un numero de manera descendente
+"""     
+def divisores(num):
+    if not isinstance(num,int):
+        return "Error: Numero debe ser entero."
+    if not(num>0):
+        return "Error: Número debe ser mayor a cero."
+    divisores = []
+    descendente = []
+    for numero in range(1,num+1):
+        if (numero%2)== 0:
+             divisores+=[numero]
+    for numero in divisores:
+        if divisores > descendente:
+            divisores+=[descendente]
+    print(descendente)
+
+"""
+Nombre: potencia
+Entrada: Base, Exponente
+Salida: potencia de un numero elevado por exponente sin utilizar elevador
+        de potencia.
+restricciòn: numero debe ser entero positivo
+"""
+def potencia(base,exponente)
+if not isinstance(base,int) and isinstance(exponente,int):
+    return "ERROR: Base y Exponente deben ser ENTEROS."
+if not(base>0) and (exponente>0):
+    return "Base y Exponente DEBEN ser mayores a CERO."
+if exponente == 0:
+    
+    
+
+
