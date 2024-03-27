@@ -1,4 +1,4 @@
-#import BaseDatos
+import BaseDatos
 import datetime
 def inicio():
     while True:
@@ -86,8 +86,4 @@ def menuConsulta():
             break
         else:
             print("¡Opción NO es válida! ingrese de nuevo una opción.")
-    
-inicio()   
-
-
-    
+inicio()    
