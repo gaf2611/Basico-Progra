@@ -1,0 +1,1 @@
+Sedan,4x4,PickUp,SUV
