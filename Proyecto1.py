@@ -32,15 +32,16 @@ def menuAdmin():
             print("Has ingresado exitosamente al menú TMG ¡BIENVENIDO!") 
 
             print("Seleccione una de las opciones:")
-            opcion = input ("Digite una opción: ")
-
-            print("1. Tipo De Vehículo ")
+              print("1. Tipo De Vehículo ")
             print("2. Repuestos ")
             print("3. Mano De Obra ")
             print("4. Mantenimiento ")
             print("5. Reparaciones ")
             print("6. Facturar ")
             print("7. Salir ")
+            opcion = input ("Digite una opción: ")
+
+          
     
 
             if  (opcion == "1"):
